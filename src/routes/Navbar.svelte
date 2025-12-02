@@ -5,7 +5,9 @@
 
   const links = [
     ['', 'Home'],
-    ['contact', 'Contact']
+    // ['contact', 'Contact'],
+    // ['sponsor', 'Sponsor Us'],
+    // ['team', 'Team']
   ];
 </script>
 
@@ -29,25 +31,14 @@
     justify-content: center;
     align-items: center;
 
-    border-bottom: 1.5px solid var(--fg-gray);
+    /* border-bottom: 1.5px solid var(--fg-gray); */
+
+    text-transform: uppercase;
+    font-weight: 600;
   }
 
   img {
     height: 100%;
-  }
-
-  #logo_white {
-    display: none;
-  }
-
-  :global(body.dark) {
-    #logo_black {
-      display: none;
-    }
-
-    #logo_white {
-      display: block;
-    }
   }
 
   #links {
