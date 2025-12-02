@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  --fg: #000000;
+  --fg2: #232323;
+
+  --bg: #ffffff;
+  --bg2: #e0e0e0;
+  --bg3: #bfbfbf;
+
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+/* to select components= :global(body.dark) and :global(body.light) */
+
+body.dark {
+  --fg: #ffffff;
+  --fg2: #a9a9a9;
+
+  --bg: #141414;
+  --bg2: #1d1d1d;
+}
+
+/* remove top space,  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
