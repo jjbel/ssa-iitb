@@ -6,29 +6,25 @@
       name: 'Prof. Apurba Laha',
       role: 'Faculty Advisor',
       dept: 'EE, IITB',
-      link: 'https://www.ee.iitb.ac.in/web/people/apurba-laha/',
-      img: 'prof'
+      link: 'https://www.ee.iitb.ac.in/web/people/apurba-laha/'
     },
     {
       name: 'Dikshit Singla',
       role: 'President',
       dept: 'EE, IITB',
-      link: 'https://www.linkedin.com/in/dikshit-singla-b1538427a/',
-      img: 'dikshit'
+      link: 'https://www.linkedin.com/in/dikshit-singla-b1538427a/'
     },
     {
       name: 'Sarthak Kamble',
       role: 'Vice President',
       dept: 'EE, IITB',
-      link: 'https://www.linkedin.com/in/sarthak-kamble-0376b22a8/',
-      img: 'sarthak'
+      link: 'https://www.linkedin.com/in/sarthak-kamble-0376b22a8/'
     },
     {
       name: 'Aadi Anaskure',
       role: '.',
       dept: 'Materials, IITB',
-      link: 'https://www.linkedin.com/in/aadi-anaskure/',
-      img: 'aadi'
+      link: 'https://www.linkedin.com/in/aadi-anaskure/'
     }
   ];
 </script>

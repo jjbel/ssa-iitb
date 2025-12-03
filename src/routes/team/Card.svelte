@@ -6,7 +6,7 @@
 
 <div class="card">
   <h3>{member.role}</h3>
-  <img src={`${base}/team-pics/${member.img}.jpg`} alt="" />
+  <img src={`${base}/team-pics/${member.name}.jpg`} alt="" />
   <h4>{member.name}</h4>
   <h4>{member.dept}</h4>
   <a href={member.link}>Link</a>
