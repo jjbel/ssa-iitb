@@ -8,7 +8,8 @@
     ['', 'Home'],
     // ['contact', 'Contact'],
     // ['sponsor', 'Sponsor Us'],
-    ['team', 'Team']
+    ['team', 'Team'],
+    ['events', 'Events']
   ];
 </script>
 
