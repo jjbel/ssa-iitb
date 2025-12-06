@@ -1,3 +1,7 @@
+<script>
+  import { MoveRight } from '@lucide/svelte';
+</script>
+
 <svelte:head>
   <title>Semiconductor Student Alliance</title>
   <meta
@@ -8,8 +12,42 @@
 
 <div class="container">
   <main>
-    <h1>Semiconductor Student Alliance - IITB Chapter</h1>
-    <h2>Empowering students to shape the future of semiconductor technology</h2>
+    <div id="titles">
+      <h1>Semiconductor Student Alliance</h1>
+      <h1>IITB Chapter</h1>
+      <h2>
+        Empowering students to shape the future of semiconductor technology
+      </h2>
+    </div>
+
+    <!-- TODO vertically center the arrow -->
+    <a id="explore_mission" href="#mission"
+      >Explore Our Mission <MoveRight height="0.1rem" /></a
+    >
+
+    <div id="contact">
+      <h2>Contact Us:</h2>
+
+      <ul>
+        <li>
+          <strong>Email: </strong>
+          <a href="mailto:ssa.iitb.ds@gmail.com">ssa.iitb.ds@gmail.com</a>
+        </li>
+        <li>
+          <strong>Phone: </strong>
+          <a href="tel:+91-8699300395">+91-8699300395</a>
+        </li>
+        <li>
+          <strong>Location: </strong>
+          IIT Bombay, Powai, Mumbai - 400076
+        </li>
+        <li>
+          <a href="https://maps.app.goo.gl/MGSS3xMeiDCfKoHd9"
+            >https://maps.app.goo.gl/MGSS3xMeiDCfKoHd9</a
+          >
+        </li>
+      </ul>
+    </div>
   </main>
 
   <div class="content">
@@ -17,9 +55,10 @@
       <h3>Our Mission</h3>
 
       <p>
-        To reimagine semiconductor education at IIT Bombay, creating a community
-        where students lead innovation and shape the future of this vital
-        technology.
+        To reimagine semiconductor education at <a
+          href="https://www.iitb.ac.in/">IIT Bombay</a
+        >, creating a community where students lead innovation and shape the
+        future of this vital technology.
       </p>
     </div>
 
@@ -81,8 +120,8 @@
           <h3>Competitions</h3>
           <ol>
             <li>Contests</li>
-            <li>hackathons</li>
-            <li>research presentations</li>
+            <li>Hackathons</li>
+            <li>Research Presentations</li>
           </ol>
         </div>
       </div>
@@ -95,21 +134,62 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    height: calc(100vh - var(--navbar-height));
+    /* background-color: rgb(255, 236, 130); */
+
+    position: relative;
   }
 
-  main h1 {
+  main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+
+    margin-top: -10%;
+  }
+
+  #titles h1 {
     font-size: 3rem;
-    margin-top: 4rem;
   }
 
-  main h2 {
+  #titles h2 {
     font-size: 1.5rem;
-    margin: 0.8rem 0rem 4rem 0rem;
     font-weight: 400;
+    color: rgb(30, 30, 30);
+  }
+
+  #explore_mission {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  #contact {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+    padding: 0.8rem;
+    background-color: black;
+    color: white;
+  }
+
+  #contact a {
+    color: rgb(114, 219, 219);
   }
 
   .content {
-    margin: 0 15rem 5rem 15rem;
+    margin: 3rem 15rem 5rem 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,6 +214,12 @@
     width: 35rem;
     font-size: 1.1rem;
     /* background-color: blue; */
+  }
+
+  .subcontent p,
+  .tag,
+  .program {
+    font-family: 'Inter', sans-serif;
   }
 
   .taglines {
