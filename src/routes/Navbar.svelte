@@ -2,6 +2,7 @@
   // https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages
   import { base } from '$app/paths';
   import logo from '$lib/ssa-iitb-logo.jpg';
+  import linkedin_logo from '$lib/linkedin-logo.png';
 
   const links = [
     ['', 'Home'],
@@ -19,6 +20,11 @@
       <a href="{base}/{link[0]}">{link[1]}</a>
     {/each}
   </div>
+
+  <a
+    href="https://www.linkedin.com/company/semiconductor-student-alliance-iitb-chapter-ssa/"
+    ><img src={linkedin_logo} alt="LinkedIn" /></a
+  >
 </nav>
 
 <style>
@@ -39,6 +45,10 @@
 
   img {
     height: 100%;
+  }
+
+  a {
+    height: 30%;
   }
 
   #links {
