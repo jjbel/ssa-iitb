@@ -31,16 +31,19 @@
   nav {
     display: flex;
     background-color: var(--bg);
-
-    padding: 0 4rem;
-    height: var(--navbar-height);
     justify-content: center;
     align-items: center;
+
+    height: var(--navbar-height);
+    /* padding: 0 4rem; */
+    gap: 6rem;
 
     /* border-bottom: 1.5px solid var(--fg-gray); */
 
     text-transform: uppercase;
     font-weight: 600;
+
+    /* background-color: red; */
   }
 
   img {
@@ -49,13 +52,14 @@
 
   a {
     height: 30%;
+    /* background-color: blue; */
   }
 
   #links {
     display: flex;
-    padding: 0.9rem 4rem;
+    padding: 0.9rem 0rem;
     font-size: 1.4rem;
-    gap: 3rem;
+    gap: 6rem;
     justify-content: center;
     align-items: center;
   }
@@ -65,9 +69,18 @@
   }
 
   @media (max-aspect-ratio: 1) {
+    :root {
+      --navbar-height: 4rem;
+    }
+
+    nav {
+      gap: 1.5rem;
+      /* background-color: yellow; */
+    }
+
     #links {
-      display: none;
-      /* TODO */
+      gap: 1.5rem;
+      padding: 0rem;
     }
   }
 </style>

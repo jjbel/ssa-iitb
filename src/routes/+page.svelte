@@ -13,8 +13,8 @@
 <div class="container">
   <main>
     <div id="titles">
-      <h1>Semiconductor Student Alliance</h1>
-      <h1>IITB Chapter</h1>
+      <h1 id="h1_1">Semiconductor Student Alliance</h1>
+      <h1 id="h1_2">IITB Chapter</h1>
       <h2>
         Empowering students to shape the future of semiconductor technology
       </h2>
@@ -136,7 +136,7 @@
     align-items: center;
     justify-content: center;
 
-    height: calc(100vh - var(--navbar-height));
+    height: calc(100svh - var(--navbar-height));
     /* background-color: rgb(255, 236, 130); */
 
     position: relative;
@@ -151,7 +151,11 @@
     margin-top: -10%;
   }
 
-  #titles h1 {
+  #h1_1 {
+    font-size: 3rem;
+  }
+
+  #h1_2 {
     font-size: 3rem;
   }
 
@@ -255,5 +259,26 @@
   .program {
     /* background-color: blue; */
     flex-grow: 1;
+  }
+
+  @media (max-aspect-ratio: 1) {
+    #h1_1 {
+      font-size: 5vw;
+    }
+    #h1_2 {
+      font-size: 13vw;
+    }
+
+    #titles h2 {
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    #contact {
+      width: 100%;
+      left: 0%;
+      bottom: 0%;
+    }
   }
 </style>
