@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2025-12-05",
+    "title": "SSA Guest Lecture Series 1",
+    "desc": "A beginner-friendly session on why semiconductors are the right field to invest our time in, how the ecosystem works, what roles (Fab, Fabless, IDM) actually look like, and how we can start building our career at IIT Bombay right now. Students got a clear picture of India's semiconductor mission, the chip journey from idea to silicon, and opportunities across EE, MEMS, Materials & Nano.",
+    "imgs": ["poster.jpg"]
+  },
+  {
+    "date": "2025-10-26",
+    "title": "Semiconductor Career Awareness and Opportunities",
+    "desc": "We explored how classroom concepts connect to cutting-edge technology and real-world careers in the semiconductor industry. The interactive session featured insights from distinguished industry and academic leaders who discussed how India's semiconductor sector is evolving - and how students can be part of this growth.",
+    "imgs": ["3.jpg", "4.jpg", "5.jpg", "6.jpg", "8.jpg"]
+  }
+]
