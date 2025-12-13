@@ -6,7 +6,7 @@
 
   const links = [
     ['', 'Home'],
-    // ['contact', 'Contact'],
+    ['contact', 'Contact'],
     // ['sponsor', 'Sponsor Us'],
     ['team', 'Team'],
     ['events', 'Events']
@@ -16,11 +16,11 @@
 <nav>
   <img src={logo} id="logo" alt="SSA IITB Logo" />
 
-  <div id="links">
-    {#each links as link}
-      <a href="{base}/{link[0]}">{link[1]}</a>
-    {/each}
-  </div>
+  <!-- <div id="links"> -->
+  {#each links as link}
+    <a href="{base}/{link[0]}">{link[1]}</a>
+  {/each}
+  <!-- </div> -->
 
   <a
     href="https://www.linkedin.com/company/semiconductor-student-alliance-iitb-chapter-ssa/"
@@ -34,16 +34,18 @@
     background-color: var(--bg);
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
 
     height: var(--navbar-height);
     /* padding: 0 4rem; */
-    gap: 6rem;
+    gap: 5rem;
 
     /* border-bottom: 1.5px solid var(--fg-gray); */
 
     text-transform: uppercase;
     font-weight: 600;
-
+    font-size: 1.4rem;
     /* background-color: red; */
   }
 
@@ -56,15 +58,6 @@
     /* background-color: blue; */
   }
 
-  #links {
-    display: flex;
-    padding: 0.9rem 0rem;
-    font-size: 1.4rem;
-    gap: 6rem;
-    justify-content: center;
-    align-items: center;
-  }
-
   a {
     color: var(--fg);
   }
@@ -72,16 +65,13 @@
   @media (max-aspect-ratio: 1) {
     :root {
       --navbar-height: 4rem;
+      /* TODO fix wrapping, increase font size */
     }
 
     nav {
       gap: 1.5rem;
       /* background-color: yellow; */
-    }
-
-    #links {
-      gap: 1.5rem;
-      padding: 0rem;
+      font-size: 0.9rem;
     }
   }
 </style>
