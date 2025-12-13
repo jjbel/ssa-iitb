@@ -41,13 +41,18 @@
 
 <style>
   .page {
-    margin: 3rem 15rem 5rem 15rem;
+    margin: 3rem auto 5rem auto;
+    width: min(90%, 70rem);
     display: flex;
     flex-direction: column;
   }
 
   ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+
+    width: 100%;
+    justify-content: space-between;
   }
 </style>

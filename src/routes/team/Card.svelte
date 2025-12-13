@@ -7,13 +7,15 @@
 <div class="card">
   <h3>{member.role}</h3>
   <img src={`${base}/team-pics/${member.name}.jpg`} alt="" />
-  <h4>{member.name}</h4>
-  <h4>{member.dept}</h4>
-  <a href={member.link}>Link</a>
+  <div class="desc">
+    <h4>{member.name}</h4>
+    <h4>{member.dept}</h4>
+    <a href={member.link}>Link</a>
+  </div>
 </div>
 
 <style>
-  .card {   
+  .card {
     width: 12rem;
     display: flex;
     flex-direction: column;
@@ -21,14 +23,20 @@
     border-top: 0.2rem solid black;
   }
 
+  .desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+
   img {
     width: 100%;
-    height: 8rem;
+    /* height: 8rem; */
     object-fit: contain;
     object-position: left center;
   }
 
   h4 {
-     font-weight: 400;
+    font-weight: 400;
   }
 </style>
