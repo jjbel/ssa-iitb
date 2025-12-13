@@ -1,4 +1,5 @@
 <script>
+  import logo from '$lib/ssa-iitb-logo.jpg';
   import { MoveRight } from '@lucide/svelte';
 </script>
 
@@ -13,6 +14,7 @@
 <div class="container">
   <main>
     <div id="titles">
+      <img src={logo} alt="" />
       <h1 id="h1_1">Semiconductor Student Alliance</h1>
       <h1 id="h1_2">IITB Chapter</h1>
       <h2>
@@ -26,7 +28,7 @@
     >
 
     <div id="contact">
-      <h2>Contact Us:</h2>
+      <h2>Get in Touch!</h2>
 
       <ul>
         <li>
@@ -55,10 +57,10 @@
       <h3>Our Mission</h3>
 
       <p>
-        To reimagine semiconductor education at <a
-          href="https://www.iitb.ac.in/">IIT Bombay</a
-        >, creating a community where students lead innovation and shape the
-        future of this vital technology.
+        To <strong>reimagine semiconductor education</strong> at
+        <a href="https://www.iitb.ac.in/">IIT Bombay</a>, creating a community
+        where students lead innovation and shape the future of this vital
+        technology.
       </p>
     </div>
 
@@ -67,10 +69,11 @@
 
       <p>
         We are the IIT Bombay chapter of the Semiconductor Student Alliance
-        (SSA), a student-led organization dedicated to transforming how students
-        engage with semiconductor technology. From organizing workshops with
-        industry leaders to hosting collaborative events, we're building a
-        culture where innovation thrives and boundaries are pushed.
+        (SSA), a student-led organization dedicated to transforming <strong>
+          how students engage with semiconductor technology
+        </strong>. From organizing workshops with industry leaders to hosting
+        collaborative events, we're building a culture where innovation thrives
+        and boundaries are pushed.
       </p>
     </div>
 
@@ -78,22 +81,22 @@
       <div class="tag">
         <h3>Community First</h3>
         <p>
-          Building a collaborative ecosystem where students inspire each other,
-          share knowledge, and work together on cutting-edge projects.
+          Building a <strong>collaborative ecosystem</strong> where students inspire
+          each other, share knowledge, and work together on cutting-edge projects.
         </p>
       </div>
       <div class="tag">
         <h3>Innovation Driven</h3>
         <p>
-          Encouraging creative thinking, bold problem-solving, and fearless
-          approaches to tackle real-world semiconductor challenges.
+          Encouraging creative thinking, <strong>bold problem-solving</strong>,
+          and fearless approaches to tackle real-world semiconductor challenges.
         </p>
       </div>
       <div class="tag">
         <h3>Future Ready</h3>
         <p>
-          Preparing students to become industry leaders through hands-on
-          experience, industry connections, and practical learning.
+          Preparing students to become <strong>industry leaders</strong> through
+          hands-on experience, industry connections, and practical learning.
         </p>
       </div>
     </div>
@@ -151,6 +154,12 @@
     margin-top: -10%;
   }
 
+  main img {
+    height: 15rem;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
   #h1_1 {
     font-size: 3rem;
   }
@@ -166,7 +175,7 @@
   }
 
   #explore_mission {
-    background-color: black;
+    background-color: var(--highlight);
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -189,11 +198,12 @@
   }
 
   #contact a {
-    color: rgb(114, 219, 219);
+    color: var(--highlight);
   }
 
   .content {
-    margin: 3rem 15rem 5rem 15rem;
+    margin: 3rem auto 5rem auto;
+    width: min(90%, 70rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,26 +214,34 @@
 
   .subcontent {
     display: flex;
+    flex-direction: column;
     gap: 0.8rem;
+    align-items: center;
   }
 
   .subcontent h3 {
-    width: 15rem;
+    /* width: 15rem; */
     /* background-color: red; */
-    text-align: right;
-    font-size: 1.5rem;
+    /* text-align: right; */
+    font-size: 1.9rem;
   }
 
   .subcontent p {
-    width: 35rem;
+    width: min(35rem, 100%);
     font-size: 1.1rem;
     /* background-color: blue; */
+    text-align: justify;
   }
 
   .subcontent p,
   .tag,
-  .program {
+  .program,
+  .content strong {
     font-family: 'Inter', sans-serif;
+  }
+
+  .content strong {
+    color: var(--highlight);
   }
 
   .taglines {

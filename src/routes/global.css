@@ -13,6 +13,8 @@ body {
   --bg2: #e0e0e0;
   --bg3: #bfbfbf;
 
+  --highlight: #008cff;
+
   color: var(--fg);
   background-color: var(--bg);
 }
